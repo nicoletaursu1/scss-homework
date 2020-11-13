@@ -1,37 +1,9 @@
-/* Device = Most of the Smartphones Mobiles (Portrait) */
-$screen-xxs-min: 320px;
-$screen-xxs-max: 480px;
+$gray: #f8f8f8;
+$light-gray: rgb(233, 233, 233);
+$dark-gray: #888;
+$highlight: #fc5b62;
+$shadow: #ccc;
 
-/* Device = Low Resolution Tablets, Mobiles (Landscape) */
-$screen-xs-min: 481px;
-$screen-xs-land: 600px;
-$screen-xs-max: 767px;
-
-/* Device = Tablets, Ipads (portrait) */
-$screen-sm-min: 640px;
-$screen-sm-md: 768px;
-$screen-sm-max: 1023px;
-
-/* Device = Laptops, Desktops */
-$screen-md-min: 1024px;
-$screen-md-max: 1280px;
-
-/* Device = Desktops */
-$screen-lg-min: 1281px;
-$screen-lg-max: 1400px;
-
-/* Higher Resolution Screens */
-$screen-xlg-min: 1441px;
-$screen-xlg-max: 2560px;
-
-$font-family-playfair: 'Playfair Display', serif;
-
-$font-weight-thin:          100;
-$font-weight-exlight:       200;
-$font-weight-light:         300;
-$font-weight-regular:       400;
-$font-weight-medium:        500;
-$font-weight-semibold:      600;
-$font-weight-bold:          700;
-$font-weight-exbold:        800;
-$font-weight-black:         900;
+$screen-sm-max: 640px;
+$screen-md-min: 767px;
+$screen-lg-min: 768px;
