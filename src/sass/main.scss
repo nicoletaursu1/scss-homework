@@ -3,7 +3,6 @@
 @import "variables";
 @import "mixins";
 
-
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -309,6 +308,7 @@ h3 {
     margin: 3px;
     &:hover {
       transform: scale(1.03);
+      z-index: 1;
     }
     img {
       width: 100%;
