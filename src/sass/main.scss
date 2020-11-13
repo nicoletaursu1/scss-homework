@@ -36,10 +36,10 @@ a:visited {
 
 a:hover {
   cursor: pointer;
-  opacity: 0.7;
-  color: inherit;
   text-decoration: none;
+  color: inherit;
   transition: 0.2s ease-in-out;
+  opacity: 0.7;
 }
 
 .nav {
@@ -47,23 +47,23 @@ a:hover {
   width: 100%;
 
   &__image {
+    position: relative;
+    z-index: 1;
     height: 100%;
     width: 100%;
     background-image: url("../assets/hero_demo.jpg");
     background-position: center;
     background-size: cover;
     filter: brightness(30%);
-    position: relative;
-    z-index: 1;
   }
 
   &__logo {
-    width: 120px;
-    height: auto;
     position: absolute;
     z-index: 2;
     top: 20px;
     left: 20px;
+    width: 120px;
+    height: auto;
   }
 
   &__content {
@@ -72,8 +72,8 @@ a:hover {
     justify-content: center;
     position: absolute;
     top: 30vh;
-    width: 100%;
     z-index: 2;
+    width: 100%;
     padding: 10px;
 
     &__header {
@@ -84,9 +84,10 @@ a:hover {
       line-height: normal;
 
       &__main-text {
+        margin: 0;
         font-size: 16px;
         text-transform: uppercase;
-        margin: 0;
+        
         @include tablet {
           font-size: 18px;
         }
@@ -107,14 +108,13 @@ a:hover {
       &__buttons-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         margin-top: 30px;
-        justify-content: center;
-
         &__button {
-          font-size: 11px;
           margin: 2px;
           border-radius: 3px;
+          font-size: 11px;
           color: white;
           @include tablet {
             font-size: 12px;
@@ -150,7 +150,6 @@ a:hover {
         }
       }
     }
-
     @include tablet {
       padding: 0 25%;
     }
@@ -161,32 +160,30 @@ a:hover {
 }
 
 .line {
-  width: "100%";
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: "100%";
   padding: 10px;
-
   &__gray {
+    z-index: 1;
     height: 1px;
     width: 100px;
-    z-index: 1;
     background-color: #ccc;
   }
-
   &__highlight {
-    height: 2px;
     position: absolute;
     z-index: 2;
+    height: 2px;
     width: 50px;
     background-color: $highlight;
   }
 }
 
 h3 {
-  margin: 5px;
   font-size: 18px;
+  margin: 5px;
   @include tablet {
     font-size: 19px;
   }
@@ -196,13 +193,12 @@ h3 {
 }
 
 .main {
-  width: 100%;
   padding: 30px 10px 0px 10px;
-
+  width: 100%;
   &__header {
     display: flex;
-    text-align: center;
     flex-direction: column;
+    text-align: center;
     padding: 0 10px;
     P {
       color: grey;
@@ -223,27 +219,23 @@ h3 {
 
   &__grid {
     display: grid;
-
     &__item {
       display: flex;
       flex-direction: column;
       align-items: center;
-
       &-picture {
         display: flex;
         justify-content: center;
-        background-color: white;
         position: relative;
-        width: 100%;
-        height: 40vh;
         overflow: hidden;
+        height: 40vh;
+        width: 100%;
+        background-color: white;
         box-shadow: 0 0 20px $shadow;
         border-radius: 5px;
-
         &:hover {
           transform: scale(1.05);
         }
-
         @include tablet {
           height: 60vh;
         }
@@ -252,8 +244,8 @@ h3 {
         }
 
         img {
-          width: calc(100% - 50px);
           position: absolute;
+          width: calc(100% - 50px);
           @include tablet {
             width: 100%;
           }
@@ -264,9 +256,9 @@ h3 {
       }
 
       &-title {
-        padding-top: 10px;
         font-size: 13px;
         font-weight: 600;
+        padding-top: 10px;
         &-highlight {
           color: $highlight;
         }
@@ -276,14 +268,14 @@ h3 {
       }
     }
     @include tablet {
-      padding: 10px 70px;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 25px;
+      padding: 10px 70px;
     }
     @include desktop {
-      padding: 30px 80px;
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 40px;
+      padding: 30px 80px;
     }
   }
 }
@@ -293,19 +285,17 @@ h3 {
   box-shadow: 0 -10px 20px $shadow;
   padding: 30px 5px 40px 5px;
   text-align: center;
-
   &__elements {
     display: flex;
     flex-direction: row;
-    width: 100%;
     padding: 5px;
-  }
-
-  &__image {
     width: 100%;
-    max-height: 250px;
+  }
+  &__image {
     overflow: hidden;
     margin: 3px;
+    max-height: 250px;
+    width: 100%;
     &:hover {
       transform: scale(1.03);
       z-index: 1;
@@ -318,18 +308,18 @@ h3 {
   &__nav {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     &-circle {
-      height: 10px;
-      width: 10px;
       border-radius: 50%;
       margin: 5px;
+      height: 10px;
+      width: 10px;
       &:hover {
-        transform: scale(1.05);
-        opacity: 0.7;
         cursor: pointer;
+        opacity: 0.7;
+        transform: scale(1.05);
       }
       @include desktop {
         height: 13px;
@@ -358,23 +348,23 @@ h3 {
   &__button-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
     align-items: center;
     justify-content: center;
     padding: 10px 100px;
+    width: 100%;
     &__content {
+      border-radius: 20px;
       background-color: $highlight;
       color: white;
       font-weight: 600;
-      padding: 5px 20px;
       font-size: 11px;
-      border-radius: 20px;
+      padding: 5px 20px;
       p {
         margin: 0;
       }
       @include desktop {
-        padding: 8px 23px;
         font-size: 13px;
+        padding: 8px 23px;
       }
     }
 
@@ -404,8 +394,8 @@ h3 {
 
 .footer {
   background-color: white;
-  padding: 30px;
   box-shadow: 0 -1px 3px $shadow;
+  padding: 30px;
   &__text {
     margin: 0;
     text-align: center;
@@ -413,7 +403,6 @@ h3 {
     &__highlight {
       color: $highlight;
     }
-
     @include desktop {
       font-size: 14px;
     }
